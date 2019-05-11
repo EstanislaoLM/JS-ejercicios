@@ -1,0 +1,14 @@
+var levels=50
+
+//counting levels
+for(var level= 1; level<=levels; level++){
+  var line=''
+  
+  //Printing pyramid
+  for(var item=1; item<=level; item++){
+    line+='*';
+  }
+  console.log(line)
+}
+
+//Center the pyramid
