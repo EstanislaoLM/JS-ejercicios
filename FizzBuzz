@@ -1,14 +1,18 @@
-var levels=50
-
-//counting levels
-for(var level= 1; level<=levels; level++){
-  var line=''
-  
-  //Printing pyramid
-  for(var item=1; item<=level; item++){
-    line+='*';
+var n;
+for (n=0; n<=15; n++){
+  var m5=n%5;
+  var m3=n%3;
+  if(n>0){
+    if(m3===0 && m5 !== 0){
+      console.log(n+' Fizz');
+    }else if(m3!==0 && m5===0){
+      console.log(n+' Buzz');
+    }else if(m3===0 && m5===0){
+      console.log(n+' FIZZBUZZ');
+    }else{
+      console.log(n);
+    }
+  }else{
+    console.log(n);
   }
-  console.log(line)
 }
-
-//Center the pyramid
